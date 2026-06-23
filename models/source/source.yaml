@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_bi_car
+    database: DATABOOSTER
+    schema: PUBLIC
+    tables:
+      - name: CAR_SALES
+        description: "Tabla de datos de ventas transactional en la base de datos"
