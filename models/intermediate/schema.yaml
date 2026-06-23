@@ -1,0 +1,3 @@
+models:
+  - name: int_monthly_sales_make
+    description: "Modelo Intermedio que agrupa por mes, vendedor y model make"
