@@ -7,36 +7,28 @@ models:
         tests:
           - unique
           - not_null
+
       - name: carmake
         description: "Nombre De La Marca"
         tests:
           - unique
           - not_null
 
-    - name: dim_salesperson
-    description: "Tabla de dimension para Marcas de Autos"
+  - name: dim_salesperson
+    description: "Tabla de dimension para Vendedores"
     columns:
       - name: sales_id
-        description: "Identificador del Vendedor"
-        tests:
-          - unique
-          - not_null
-      - name: salesperson
         description: "Identificador del Vendedor"
         tests:
           - unique
           - not_null
 
-    - name: fact_monthly_sales
-    description: "Tabla de dimension para Marcas de Autos"
-    columns:
-      - name: sales_id
-        description: "Identificador del Vendedor"
-        tests:
-          - unique
-          - not_null
       - name: salesperson
-        description: "Identificador del Vendedor"
+        description: "Nombre del Vendedor"
         tests:
           - unique
           - not_null
+
+  - name: fact_monthly_sales
+    description: "Tabla de hechos de ventas mensuales"
+    columns: []
