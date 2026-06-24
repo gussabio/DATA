@@ -4,6 +4,10 @@ sources:
   - name: raw_bi_car
     database: DATABOOSTER
     schema: PUBLIC
+
     tables:
       - name: CAR_SALES
-        description: "Tabla de datos de ventas transactional en la base de datos"
+        description: "Tabla de datos transaccionales de ventas"
+
+      - name: SALESPERSON
+        description: "Tabla de vendedores"

@@ -6,6 +6,6 @@ select
 from
     {{ ref('fact_monthly_sales') }}
 Where
-    TOTALSALE < 0 or TOTALCOMEARNED < 0
+    TOTALSALE < 0 or TOTALCOMEARNED < 0 
 
 
