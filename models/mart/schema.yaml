@@ -1,3 +1,5 @@
+version: 2
+
 models:
   - name: dim_carmake
     description: "Tabla de dimension para Marcas de Autos"
@@ -9,10 +11,23 @@ models:
           - not_null
 
       - name: carmake
-        description: "Nombre De La Marca"
+        description: "Nombre de la Marca"
         tests:
           - unique
           - not_null
+          - accepted_values:
+              arguments:
+                column_name: carmake
+                values:
+                  - Toyota
+                  - Ford
+                  - Chevrolet
+                  - Honda
+                  - Audi
+                  - BMW
+                  - Nissan
+              config:
+                severity: warn
 
   - name: dim_salesperson
     description: "Tabla de dimension para Vendedores"
